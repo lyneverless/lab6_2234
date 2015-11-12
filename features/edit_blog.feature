@@ -6,4 +6,4 @@ Scenario: Edit blog
 	And I am on the blog homepage
 	When I edit this post
 	And I update title to "Updated title" and content to "Updated content"
-	Then I can see it has been updated
+	Then I should see the new blog

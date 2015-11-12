@@ -7,4 +7,4 @@ Scenario: Write blog
 	And I fill "My firte blog" as Title
 	And I fill "Test content" as content
 	And I click "Post" button
-	Then I should see the blog I just posted
+	Then I should see the new blog

@@ -8,7 +8,3 @@ And /^I update title to "(.*?)" and content to "(.*?)"$/ do |title,content|
 	fill_in "Content", :with => content
 	click_on "Update Post"
 end
-
-Then /^I can see it has been updated$/ do
-	page.should have_content(@title)
-end

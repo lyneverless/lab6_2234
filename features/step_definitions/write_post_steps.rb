@@ -14,7 +14,3 @@ end
 When /^I click "(.*?)" button$/ do |btn|
 	click_button btn
 end
-
-Then /^I should see the blog I just posted$/ do
-	page.should have_content(@title)
-end

@@ -11,3 +11,7 @@ And /^there are already (\d) posts$/ do |count|
 		Post.create!({:title => "Title #{n}", :content => "Content #{n}", :post_time => Time.now})
 	end
 end
+
+Then /^I should see the new blog$/ do
+	page.should have_content(@title)
+end
